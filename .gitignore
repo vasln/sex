@@ -1,0 +1,55 @@
+# Зависимости и пакеты
+node_modules/
+vendor/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Сборка и скомпилированные файлы
+dist/
+build/
+out/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Переменные окружения и секреты (критически важно)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.json
+
+# Логи и временные файлы
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Системные файлы ОС
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Настройки редакторов и IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# Покрытие тестами и кэш
+coverage/
+.nyc_output/
+.pytest_cache/
+.cache/

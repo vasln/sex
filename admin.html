@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <a class="header__logo" href="/" >Конференции.РФ</a>
+        <nav class="nav">
+            <a class="nav__link" href="login.html">Login</a>
+            <a class="nav__link" href="register.html">Register</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="message"></div>
+        <form method="post" action="/admin" class="form-box">
+            <article>
+                <H2>Заявка №1</H2>
+                <label>ФИО клиента</label>
+                <label>Телефон</label>
+                <label>Помещение</label>
+                <label>дата</label>
+                <label>Оплата</label>
+                <label>Текущий статус</label>
+                    <!-- Многострочное поле -->
+                <label>Статус</label>
+                <select id="status" name="status_id" class="form-select">
+                    <option value="">-- Выберите статус --</option>
+                    <option value="1">Новая</option>
+                    <option value="2">Мероприятие наз   начено</option>
+                    <option value="3">Завершено</option>
+                </select>
+            </article>
+        </form>
+    </main>
+    <!-- Подвал -->
+    <footer>«© 2027 Конференции.РФ».</footer>
+</body>
+</html>
